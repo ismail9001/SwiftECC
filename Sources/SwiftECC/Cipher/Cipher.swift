@@ -5,7 +5,7 @@
 //  Created by Leif Ibsen on 03/02/2020.
 //
 
-import BigInt
+import BInt
 import Digest
 
 typealias Word = UInt32

@@ -8,7 +8,7 @@
 import Foundation
 import CryptoKit
 import ASN1
-import BigInt
+import BInt
 import Digest
 
 public class ECPrivateKey: CustomStringConvertible {

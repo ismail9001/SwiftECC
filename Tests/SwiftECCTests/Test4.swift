@@ -7,7 +7,7 @@
 
 import XCTest
 @testable import SwiftECC
-import BigInt
+import BInt
 
 // Test a home made characteristic 2 domain - Guide to Elliptic Curve Cryptography - example 3.6
 

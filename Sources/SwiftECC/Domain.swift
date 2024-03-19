@@ -6,7 +6,7 @@
 //
 
 import ASN1
-import BigInt
+import BInt
 
 /// Unsigned 8 bit value
 public typealias Byte = UInt8

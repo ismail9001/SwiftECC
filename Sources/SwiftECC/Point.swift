@@ -5,7 +5,7 @@
 //  Created by Leif Ibsen on 23/10/2019.
 //
 
-import BigInt
+import BInt
 
 public struct Point: CustomStringConvertible, Equatable {
     

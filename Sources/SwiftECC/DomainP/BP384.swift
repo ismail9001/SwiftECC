@@ -6,7 +6,7 @@
 //
 
 import ASN1
-import BigInt
+import BInt
 
 class BP384r1: DomainP {
     

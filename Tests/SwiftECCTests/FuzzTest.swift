@@ -7,7 +7,7 @@
 
 import XCTest
 @testable import SwiftECC
-import BigInt
+import BInt
 import ASN1
 
 class FuzzTest: XCTestCase {

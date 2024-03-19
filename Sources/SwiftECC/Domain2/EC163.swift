@@ -7,7 +7,7 @@
 //
 
 import ASN1
-import BigInt
+import BInt
 
 class EC163k1: Domain2 {
     

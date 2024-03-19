@@ -5,7 +5,7 @@
 //  Created by Leif Ibsen on 30/10/2019.
 //
 
-import BigInt
+import BInt
 
 // A BitVector is an array of Limb's representing a binary polynomial. Bit number i is the coefficient to x^i
 // BitVectors have a fixed size specified at their creation

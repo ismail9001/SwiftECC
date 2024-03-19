@@ -8,7 +8,7 @@
 import XCTest
 @testable import SwiftECC
 import ASN1
-import BigInt
+import BInt
 import Digest
 
 class ExceptionTest: XCTestCase {

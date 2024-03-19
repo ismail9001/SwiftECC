@@ -6,7 +6,7 @@
 //
 
 import ASN1
-import BigInt
+import BInt
 
 public class ECSignature {
 

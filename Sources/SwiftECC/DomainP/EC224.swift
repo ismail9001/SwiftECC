@@ -7,7 +7,7 @@
 //
 
 import ASN1
-import BigInt
+import BInt
 
 class EC224k1: DomainP {
     

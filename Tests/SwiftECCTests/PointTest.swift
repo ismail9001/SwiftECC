@@ -7,7 +7,7 @@
 
 import XCTest
 @testable import SwiftECC
-import BigInt
+import BInt
 
 // Test point encoding and decoding
 
