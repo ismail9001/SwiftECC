@@ -7,6 +7,7 @@
 
 import ASN1
 import BInt
+import Digest
 
 /// Unsigned 8 bit value
 public typealias Byte = UInt8
@@ -213,7 +214,10 @@ public class Domain: CustomStringConvertible, Equatable {
     /// - Returns: The corresponding domain
     /// - Throws: An exception if the PEM contents is wrong
     public static func instance(pem: String) throws -> Domain {
-        return try Domain.domainFromASN1(ASN1.build(Base64.pemDecode(pem, "EC PARAMETERS")))
+        guard let der = Base64.pemDecode(pem, "EC PARAMETERS") else {
+            throw ECException.pemStructure
+        }
+        return try Domain.domainFromASN1(ASN1.build(der))
     }
 
     /// Constructs an odd prime characteristic domain
@@ -427,7 +431,7 @@ public class Domain: CustomStringConvertible, Equatable {
     ///
     /// - Parameters:
     ///   - bytes: The byte array to decode
-    ///   - Returns: The point
+    /// - Returns: The point
     /// - Throws: An `decodePoint` exception if `bytes` contains invalid data
     public func decodePoint(_ bytes: Bytes) throws -> Point {
         let p = try self.characteristic2 ? self.domain2!.decodePoint(bytes) : self.domainP!.decodePoint(bytes)

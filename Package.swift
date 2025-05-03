@@ -16,7 +16,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/ismail9001/ASN1", branch: "master"),
         .package(url: "https://github.com/ismail9001/BInt", branch: "master"),
-        .package(url: "https://github.com/leif-ibsen/Digest", from: "1.4.0"),
+        .package(url: "https://github.com/leif-ibsen/Digest", from: "1.13.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
